@@ -1,0 +1,21 @@
+Linux 关机
+
+关机指令为：shutdown ，man shutdown 看帮助文档。
+
+1.sync 将数据由内存同步到硬盘中
+
+2.shutdwon
+
+shutdown –h 10 屏幕显示
+
+shutdown –h now 
+
+shutdown –h 20:25 
+
+shutdown –h +10 十分钟后
+
+shutdown -c 取消
+
+3.reboot 重启
+
+4.halt 关闭系统
