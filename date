@@ -1,0 +1,9 @@
+1. date:显示日期和时间
+   date --help
+   date +%Y/%m/%d%H:%M
+   
+
+2. cal [[month] year]:显示日历
+   
+
+3. bc:计算器
