@@ -10,7 +10,7 @@
 3. [summer@hostname ~]$ command [-option] parameter1 parameter2 ...
    command:第一个输入的数据绝对是 命令 或者 可执行文件
    按回车键[Enter]表示开始执行一条命令
-   [-option]：实际命令不写[]，-参数（--参数完整名称）
+   [-option]：实际命令不写[]，-参数（--参数完整名称,+特殊情况）
    命令中的空格不论空几格，shell都视为一格
    命令太长用\[Enter]
    
