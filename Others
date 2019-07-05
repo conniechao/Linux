@@ -1,0 +1,18 @@
+1. [summer@hostname ~]$ exit
+    summer:当前用户名； 
+    hostname:主机名； 
+    ~:当前所在目录，代表用户的主文件夹，是个“变量”
+    $:提示符（默认root的提示符是#）
+    exit:离开系统，不是关机。
+
+2. 区分大小写
+
+3. [summer@hostname ~]$ command [-option] parameter1 parameter2 ...
+   command:第一个输入的数据绝对是 命令 或者 可执行文件
+   按回车键[Enter]表示开始执行一条命令
+   [-option]：实际命令不写[]，-参数（--参数完整名称）
+   命令中的空格不论空几格，shell都视为一格
+   命令太长用\[Enter]
+   
+4. 
+   
