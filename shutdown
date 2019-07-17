@@ -1,21 +1,41 @@
-Linux 关机
+Linux 正确关机
 
-关机指令为：shutdown ，man shutdown 看帮助文档。
+1. 查看系统的服务状态
+(1)who：查看有谁在线
+(2)netstat -a：看网络的联机状态
+(3)ps -aux：看后台执行的程序
 
-1.sync 将数据由内存同步到硬盘中
+2. 正确的关机命令
+shutdown和reboot
 
-2.shutdwon
+3. 将数据由内存同步写入硬盘：sync
+为了加快数据读取速度，数据暂存在内容中修改，执行sync命令写入硬盘
 
-shutdown –h 10 屏幕显示
-
-shutdown –h now 
-
-shutdown –h 20:25 
-
-shutdown –h +10 十分钟后
-
+4. 惯用的关机命令：shutdown [-t 秒(sec)] [-a/r/k/h/n/c/f/F] +时间（min） '警告消息'
+(1)可选择关机模式：关机 -h、重启 -r、单用户操作
+(2)可设置关机时间 -t sec
+(3)可自定义关机消息传送给在线用户，在关机之前
+(4)可仅发出警告消息，不关机 -k
+(5)可选择是否用fsck检查文件系统 -f:不检查  -F：检查
+(6)取消关机 -c
+例如：
+shutdown –h now  立刻关机
+shutdown –h 18:00  今天18:00关机
+shutdown –h +20 'The system will shutdown after 20 mins' 20分钟后自动关机
+shutdown –r now  立刻重启
+shutdown –k +20 'The system will reboot' 系统将要重启，不关机
 shutdown -c 取消
 
-3.reboot 重启
+4. 重启:reboot 
+sync sync reboot
 
-4.halt 关闭系统
+5. 关闭系统：halt, poweroff 
+halt 与 shutdown区别：
+(1)halt先调用shutdown，shutdown最后调用halt
+(2)shutdown逐次关闭各服务后才关机，halt不管系统状态，进行硬件关机
+
+6.切换执行等级：init 0
+run level 0:关机
+run level 3:纯命令行模式
+run level 5:含有图形界面模式
+run level 6:重启
