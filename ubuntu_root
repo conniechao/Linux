@@ -6,15 +6,12 @@ CTRL+ALT+T进入终端界面
 3、su root
 
 root切换到普通用户命令：
-
-1、su user
+1、su username
 2、exit
 3、Ctrl+D
 
 root用户设定密码： 
 sudo passwd root
 
-禁用和启用root登录
-sudo passwd -l root
-禁用root，root密码还保存着，su root认证失败，sudo su仍可进入root
-再次启动root登录，执行sudo passwd -u root
+禁用root登录:sudo passwd -l root(root密码还保存着，su root认证失败，sudo su可进入root)
+启用root登录:sudo passwd -u root
