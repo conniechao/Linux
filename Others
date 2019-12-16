@@ -26,3 +26,8 @@ Ctrl+d：键盘输入结束，相当于exit
 man date
 info ls
 
+7. 挂载
+移动存储，系统自动挂载的时候一般会放在/media
+固定存储，系统自动挂载一般放在/mnt
+挂载在/media底下的设备，可通过PLACE快速访问，比mnt方便
+ 
