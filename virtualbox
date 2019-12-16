@@ -1,0 +1,14 @@
+安装增强功能
+
+共享文件夹设置固定挂载
+
+virtualbox共享文件夹无访问权限问题
+virtualbox的共享文件夹一般都挂载在/media下面
+文件夹的所有者是root，所有组是vboxsf，所以文件管理去无法访问是正常的
+解决方法是把自己加入到vboxsf组里面。
+sudo usermod -a -G vboxsf yourusernanme
+重启
+
+
+
+
