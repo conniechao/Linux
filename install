@@ -1,0 +1,24 @@
+1.	安装pip
+# tar -xzvf pip-1.5.4.tar.gz
+# cd pip-1.5.4
+# python setup.py install
+
+
+2.	安装sh文件
+Bash ‘路径
+
+3.	安装卸载anaconda2
+Rm –rf ~/anaconda3/
+sudo gedit ~/.bashrc
+安装
+bash '/media/sf_linux/Anaconda2-4.4.0-Linux-x86_64.sh'
+echo 'export PATH="~/anaconda2/bin:$PATH"' >> ~/.bashrc^C
+source ~/.bashrc
+
+4.	安装tenso
+将whl文件放到anaconda2/lib/python2.7/site-packages/ 里面 
+pip install tensorflow-0.8.0rc0-cp27-none-linux_x86_64.whl 就可以了
+运行
+conda
+jupyter notebook
+tensorboard --logdir=/path/to/log-directory
