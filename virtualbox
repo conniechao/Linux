@@ -9,6 +9,10 @@ virtualbox的共享文件夹一般都挂载在/media下面
 sudo usermod -a -G vboxsf yourusernanme
 重启
 
+virtubox加载共享目录
+sudo mount -t vboxsf VMShared /media/sf_VMShared/
+
+
 
 
 
